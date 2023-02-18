@@ -1,0 +1,19 @@
+name: SkillsPlugin
+version: '${project.version}'
+main: com.github.gavvydizzle.skillsplugin.SkillsPlugin
+api-version: 1.19
+depend: [ServerUtils, Vault]
+softdepened: [PlaceholderAPI]
+author: GavvyDizzle
+description: Skill tree plugin
+commands:
+  skill:
+    aliases: [skills]
+    description: Player commands
+    permission: skillsplugin.skills
+    permission-message: Insufficient permission
+  skillAdmin:
+    aliases: [skillsAdmin]
+    description: Admin commands
+    permission: skillsplugin.skilladmin
+    permission-message: Insufficient permission
